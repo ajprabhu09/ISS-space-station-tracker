@@ -23,7 +23,7 @@ class ISSlocation:
         self.dictionary = None
         self.prev_lats = []
         self.prev_longs = []
-        self.names = requests.get(name_url).json()
+        self.names = requests.gaet(name_url).json()
         print(self.names)
     def step(self):
         '''
