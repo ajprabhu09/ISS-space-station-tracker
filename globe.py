@@ -11,7 +11,7 @@ plt.ion()
 for i in range(10):
     location.step()
     print(location)
-    plt.clf()
+    # plt.clf()
     map = Basemap(projection='ortho',lat_0=location.lat,lon_0=location.long,resolution='l')
     # draw coastlines, country boundaries, fill continents.
     map.drawcoastlines(linewidth=0.25)
